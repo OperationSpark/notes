@@ -4,7 +4,7 @@ $(function () {
     var notes = window.opspark.notes;
     
     notes.show = function () {
-        if (window.location.href.match(/c9\.io|github_io|localhost|127\.0\.0\.1/)) {
+        if (window.location.href.match(/c9\.io|github_io|localhost|127\.0\.0\.1|file\:\/\/\//)) {
             $('<a/>')
                 .attr('id', 'btnDirections')
                 .attr('href', '.notes/directions.html')
