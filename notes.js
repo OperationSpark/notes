@@ -6,7 +6,7 @@ $(function () {
     notes.show = function (prependTo, file) {
         prependTo = prependTo ? prependTo : '#container';
         file = file ? file : '.notes/directions.html';
-        if (window.location.href.match(/c9\.io|github_io|localhost|127\.0\.0\.1|file\:\/\/\//)) {
+        if (window.location.href.match(/c9[\w-_]*\.io|localhost|127\.0\.0\.1|file\:\/\/\//)) {
             $('<a/>')
                 .attr('id', 'btnDirections')
                 .attr('href', file)
